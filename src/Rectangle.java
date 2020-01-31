@@ -5,7 +5,6 @@ public class Rectangle {
 	
 	private double side1;
 	private double side2;
-	
 	/*
 	 * Static Fields:
 	 * 		- Static fields are shared by all instances
@@ -40,6 +39,7 @@ public class Rectangle {
 	 * 		- Static methods are typically called with the name of the class
 	 * 		- Since the static fields of all instances is the same static methods call access static fields
 	 * 		- GENERAL RULE: if a method only uses static fields make the method static
+	 * 		- GENERAL RULE: if you don't need instance rules, use static
 	 * 
 	 * 
 	 //*/
@@ -71,9 +71,7 @@ public class Rectangle {
 			temp = new Rectangle(o2);
 		}
 		
-		
 		return temp;
-		
 	}
 	
 	

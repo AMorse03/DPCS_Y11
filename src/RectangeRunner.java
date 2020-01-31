@@ -11,7 +11,13 @@ public class RectangeRunner {
 		
 		Rectangle r5 = Rectangle.copyLarger(r4, r1);
 		
+		
+		//THIS AUTOMATICALLY CALLS toString - BUILT IN JAVA RULE
 		System.out.println(r5);
+		//EQUALLY AS VALID
+		System.out.println(r5.toString());
+		
+		System.out.println(Rectangle.getRectangleCount());
 		
 		
 		
