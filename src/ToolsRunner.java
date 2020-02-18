@@ -193,7 +193,30 @@ public class ToolsRunner {
 			}//end if		
 		}//end for		
 		System.out.println(list2);
+		
+		
+		
+		
+//**********************************************CLASS WORK THURSDAY FEBRUARY 6, 2020*****************************************************
+
+		int[] butt = {1,2,3,4};
+		System.out.println($AANM.linearSearch(butt, 3));
+		String[] butt1 = {"Billy", "Bob", "Joe"};
+		System.out.println($AANM.linearSearch(butt1, "Bob"));
+		
+		
+		
+		
+//**********************************************CLASS WORK WEDNESDAY FEBRUARY 12, 2020*****************************************************
+		int[] test = {1,7,8,3,4,9,2};
+		$AANM.selectionSort(test);
+		System.out.println();
+		for (int i = 0; i < arr.length; i=i+1) {
+			System.out.print(arr[i] + " ");
+		}
+		
 	
 	}//END MAIN
+	
 	
 }
