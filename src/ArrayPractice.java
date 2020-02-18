@@ -13,11 +13,11 @@ public class ArrayPractice {
 		 //*This makes an array with a length of 5
 		 //*BT: Numeric Types are defaults to 0
 		 //*BT - Big takeaway 
-		 *int[0] = 1;
-		 *int[1] = 2;
-		 *int[2] = 3;
-		 *int[3] = 4;
-		 *int[4] = 5;
+		 *x[0] = 1;
+		 *x[1] = 2;
+		 *x[2] = 3;
+		 *x[3] = 4;
+		 *x[4] = 5;
 		 *
 		 *
 		 //*/

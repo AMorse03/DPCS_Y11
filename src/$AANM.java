@@ -1,5 +1,6 @@
 import java.util.Queue;
 import java.util.Random;
+import java.util.Scanner;
 import java.util.Stack;
 
 public class $AANM {
@@ -107,7 +108,7 @@ public class $AANM {
 	
 	
 	/**
-	 * 
+	 * This method takes a number of Arrays and turns them into a 2D array
 	 * @return
 	 * 
 	 * 
@@ -115,9 +116,9 @@ public class $AANM {
 	 */
 	public int[][] HLP1NOV201714() {
 		
-		int[] values = {7,-3,9, -1,-6,-5,1};
-		int[] rowc = {1,1,3,3,4,7}; //Gives you the amount of rows - 6
-		int[] col = {0,2,4,2,1,4,5};
+		int[] values = {7, -3, 9, -1, -6, -5, 1};
+		int[] rowc = {1, 1, 3, 3, 4, 7}; //Gives you the amount of rows: 6
+		int[] col = {0, 2, 4, 2, 1, 4, 5};
 		
 		//TASK: Write the algorithm that will
 		//	   	take these three arrays and create the 
@@ -137,7 +138,10 @@ public class $AANM {
 	}
 	
 	
-	
+	/**
+	 * This method takes a 2D array of ints and prints it out in column major
+	 * @param arr
+	 */
 	public static void print2DColumnMajor(int [][] arr){
 		for (int c = 0; c < arr[0].length; c++) {
 			for (int r = 0; r < arr.length; r++) {
@@ -147,6 +151,10 @@ public class $AANM {
 	}
 	
 	
+	/**
+	 * This method takes a 2D array of ints and prints it out in row major
+	 * @param arr
+	 */
 	public static void print2DRowMajor(int [][] arr){
 		for (int r = 0; r < arr.length; r++) {
 			for (int c = 0; c < arr[r].length; c++) {
@@ -157,7 +165,12 @@ public class $AANM {
 	
 	
 	
-	
+	/**
+	 * This method creates a random 2D array of ints using the Random class.
+	 * @param rows
+	 * @param columns
+	 * @return
+	 */
 	public static int[][] createRandom2DArray(int rows, int columns){
 		int[][] arr = new int[rows][columns];
 		Random rand = new Random();
@@ -198,7 +211,7 @@ public class $AANM {
 	
 	
 	/**
-	 * 
+	 *  This method generates a random array of Ints
 	 * @param a
 	 * @param b
 	 * @param c
@@ -235,7 +248,6 @@ public class $AANM {
 	}
 	
 	
-	//ALSKJDF;LKSFJAL;DFJ;S
 	/*
 	public static void printMatrix(int r, int c) {
 		int[][] mat = new int[r][c]; //create an array with r rows and c columns 
@@ -719,6 +731,10 @@ public class $AANM {
 	 * @param arr
 	 * @param v
 	 * @return
+	 * 
+	 * 
+	 * Postcondition: The array remains unchanged 
+	 * 
 	 */
 	public static int linearSearch(int[] arr, int v) {
 		
@@ -736,6 +752,9 @@ public class $AANM {
 	 * @param arr
 	 * @param v
 	 * @return
+	 * 
+	 * Postcondition: The array remains unchanged 
+	 * 
 	 */
 	public static int linearSearch (String[] arr, String v) {
 		
@@ -750,8 +769,13 @@ public class $AANM {
 	
 	
 	
-//**********************************************CLASS WORK THURSDAY FEBRUARY 6, 2020*****************************************************
+//**********************************************CLASS WORK THURSDAY FEBRUARY 12, 2020*****************************************************
 
+	/**
+	 * This function performs a selection sort putting an array of Ints into numerical ascending order
+	 * @param arr
+	 * @return
+	 */
 	public static int[] selectionSort(int[] arr) {
 		
 		for (int i = 0; i<arr.length-1;i++) {
@@ -775,4 +799,43 @@ public class $AANM {
 		return null;
 	}
 
+
+
+
+//**********************************************CLASS WORK THURSDAY FEBRUARY 12, 2020*****************************************************
+
+
+	/**
+	 * Takes a single int that sets the size of an array
+	 * Takes all integer inputs. Returns the array
+	 * @return
+	 */
+	public static int[] inputIntArray() {
+		
+		//STEP 1 - Create Scanner
+		Scanner s = new Scanner(System.in);
+		
+		System.out.println("How many elements?");
+		int n = s.nextInt(); //this takes the input as the length of the array
+		
+		int[] result = new int[n];
+		
+		for (int i = 0; i < n; i++) {
+			System.out.println("Input Value:");
+			result [i] = s.nextInt();
+		}
+		
+		return result;
+		
+	}
+	
 }
+
+
+
+
+
+
+
+
+
